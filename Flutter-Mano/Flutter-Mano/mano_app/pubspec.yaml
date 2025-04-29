@@ -1,0 +1,56 @@
+name: mano_app
+description: "A modern Flutter app with structured architecture and state management."
+
+# Prevent accidental publishing to pub.dev
+publish_to: 'none'
+
+# App version
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # iOS-style icons
+  cupertino_icons: ^1.0.8
+
+  # State management
+  provider: ^6.1.2
+
+  # HTTP calls for API integration
+  http: ^0.13.6
+
+  # JSON serialization support (optional)
+  json_annotation: ^4.8.1
+
+  # Form validation, optional utilities
+  flutter_form_builder: ^9.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+  # For code generation (only needed if using json_serializable)
+  build_runner: ^2.4.8
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+
+  # Assets section (add your assets here)
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  # Fonts section (optional, if you have custom fonts)
+  # fonts:
+  #   - family: YourFontFamily
+  #     fonts:
+  #       - asset: fonts/YourFont-Regular.ttf
+  #       - asset: fonts/YourFont-Bold.ttf
+  #         weight: 700
